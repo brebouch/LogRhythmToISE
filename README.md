@@ -12,13 +12,13 @@ This script integrates Cisco ISE Passive ID management with LogRhythm Search API
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/cisco-ise-passive-id-manager.git
+   git clone https://github.com/brebouch/LogRhythmToISE.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd cisco-ise-passive-id-manager
+   cd LogRhythmToISE
    ```
 
 3. Install the required Python packages:
@@ -29,19 +29,13 @@ This script integrates Cisco ISE Passive ID management with LogRhythm Search API
 
 ## Operation
 
-1. Obtain necessary credentials and access tokens:
+* Obtain necessary credentials and access tokens:
    - Cisco ISE IP address
    - Cisco ISE username and password
+   - AD Domain Name
    - LogRhythm base URL
    - LogRhythm API bearer token
 
-2. Update the \`config.json\` file with your credentials and settings.
-
-3. Run the script using Python:
-
-   ```bash
-   python main.py
-   ```
 
 ## Usage
 
