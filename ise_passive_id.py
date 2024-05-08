@@ -10,6 +10,7 @@ current_time = datetime.utcnow()
 # Format the datetime as per the required format
 demo_timestamp = current_time.strftime('%Y-%m-%dT%H:%M:%SZ')
 
+
 class CiscoISEPICManager:
     """
     Class to manage user identity events for Passive Identity services with Cisco ISE-PIC.
@@ -56,7 +57,7 @@ class CiscoISEPICManager:
             return None
 
     def add_identity_mapping(self, user, src_ip, agent_info, timestamp, domain, src_pat_start=None, src_pat_end=None,
-                 pat_range_start=None):
+                             pat_range_start=None):
         """
         Adds a user identity mapping.
 
@@ -140,10 +141,10 @@ if __name__ == "__main__":
 
     # Add user
     new_mapping = manager.add_identity_mapping(user="example_user",
-                                src_ip="Endpoint IP",
-                                agent_info=agent_id,
-                                timestamp=demo_timestamp,
-                                domain="example.com")
+                                               src_ip="Endpoint IP",
+                                               agent_info=agent_id,
+                                               timestamp=demo_timestamp,
+                                               domain="example.com")
     if new_mapping:
         print("User added successfully:", new_mapping)
     else:
