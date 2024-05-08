@@ -1,0 +1,69 @@
+{
+  "statusCode": 200,
+  "statusMessage": "Success",
+  "responseMessage": "Search completed successfully.",
+  "allLogsCount": 3000,
+  "filteredLogsCount": 1000,
+  "items": [
+    {
+      "timestamp": "2024-05-01T08:30:45Z",
+      "eventID": 4624,
+      "eventName": "Logon",
+      "logSource": "Active Directory",
+      "username": "user1",
+      "sourceIP": "192.168.1.101",
+      "destinationIP": "192.168.1.201",
+      "description": "Successful logon by user1"
+    },
+    {
+      "timestamp": "2024-05-01T09:15:22Z",
+      "eventID": 4625,
+      "eventName": "Logoff",
+      "logSource": "Active Directory",
+      "username": "user2",
+      "sourceIP": "192.168.1.102",
+      "destinationIP": "192.168.1.202",
+      "description": "Successful logoff by user2"
+    },
+    {
+      "timestamp": "2024-05-01T10:00:11Z",
+      "eventID": 4776,
+      "eventName": "Credential Validation",
+      "logSource": "Active Directory",
+      "username": "user3",
+      "sourceIP": "192.168.1.103",
+      "destinationIP": "192.168.1.203",
+      "description": "Successful credential validation for user3"
+    },
+    {
+      "timestamp": "2024-05-02T08:45:30Z",
+      "eventID": 4624,
+      "eventName": "Logon",
+      "logSource": "Active Directory",
+      "username": "user4",
+      "sourceIP": "192.168.1.104",
+      "destinationIP": "192.168.1.204",
+      "description": "Successful logon by user4"
+    },
+    {
+      "timestamp": "2024-05-02T09:30:15Z",
+      "eventID": 4625,
+      "eventName": "Logoff",
+      "logSource": "Active Directory",
+      "username": "user5",
+      "sourceIP": "192.168.1.105",
+      "destinationIP": "192.168.1.205",
+      "description": "Successful logoff by user5"
+    },
+    {
+      "timestamp": "2024-05-02T10:15:45Z",
+      "eventID": 4776,
+      "eventName": "Credential Validation",
+      "logSource": "Active Directory",
+      "username": "user6",
+      "sourceIP": "192.168.1.106",
+      "destinationIP": "192.168.1.206",
+      "description": "Successful credential validation for user6"
+    }
+  ]
+}
