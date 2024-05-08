@@ -50,7 +50,7 @@ The script integrates Cisco ISE Passive ID management with LogRhythm Search API.
 Example usage:
 
 ```bash
-python logs2ise.py <ise_ip> <ise_username> <ise_password> <agent_id> <log_rhythm_api_url> <log_rhythm_token>
+python logs2ise.py <ise_ip> <ise_username> <ise_password> <agent_id> <log_rhythm_api_url> <log_rhythm_token> <log_rhythm_demo_data `true or false`>
 ```
 
 Replace `<ise_ip>`, `<ise_username>`, `<ise_password>`, and `<agent_id>` with your Cisco ISE IP address, username, password, and agent ID respectively.

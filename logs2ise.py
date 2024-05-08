@@ -6,7 +6,6 @@ from log_search import LogRhythmSearchAPI
 
 # Example usage:
 if __name__ == "__main__":
-    demo = True
     # Initialize CiscoISEPICManager
     ise_ip = sys.argv[1]
     pic_user = sys.argv[2]
@@ -14,8 +13,13 @@ if __name__ == "__main__":
     domain = sys.argv[4]
     manager = CiscoISEPICManager(ise_ip, pic_user, pic_pwd)
     search_result = None
+    demo_data = False
+    try:
+        demo_data = bool(sys.argv[5])
+    except:
+        pass
 
-    if demo:
+    if demo_data:
         search_result = json.loads(open('./tests/test_response.json').read())
     else:
 
